@@ -42,7 +42,7 @@ export const AuthProvider=({children})=>{
                 username:username,
                 password:password,
             })
-            console.log("LOGIN----------",request)
+            //console.log("LOGIN----------",request)
             if(request.status===httpStatus.OK){
                 localStorage.setItem('token',request.data.token);
                 router("/home")
